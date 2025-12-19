@@ -21,6 +21,7 @@ In the `/dev-api/common/upload` endpoint, there is a flaw in the file extension 
 5. Additionally, directory traversal is partially possible. Although the file name is a randomly generated UUID—preventing the creation of files with arbitrary names in arbitrary locations—it allows creating empty directories with specified names in the target path.
 <img width="1720" height="840" alt="image" src="https://github.com/user-attachments/assets/7e8688a5-999c-45c6-b8ae-57ea4406785b" />
 <img width="1106" height="316" alt="image" src="https://github.com/user-attachments/assets/7654a8df-1538-4743-af83-6fdb4c2f73e6" />
+
 ## Code analysis
 <img width="1772" height="1294" alt="image" src="https://github.com/user-attachments/assets/04591007-ed26-46a3-9558-57065ce34f71" />
 1. The method responsible for extracting the file extension contains a special conditional check.
