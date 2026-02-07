@@ -5,7 +5,7 @@ https://github.com/feiyuchuixue/sz-boot-parent
 sz-boot-parent <= v1.3.2-beta
 
 ## Vulnerability Type
-Arbitrary_File_Read
+Arbitrary_Resource_File_Read
 
 ## Vulnerability Description
 The API `/api/admin/common/download/templates?templateName=../application.yml` is vulnerable to **directory traversal**, which allows attackers to read arbitrary resource files on the server.
